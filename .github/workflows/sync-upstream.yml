@@ -52,7 +52,7 @@ jobs:
           
           # 添加前缀
           sed -i 's/^更新时间,/晓宇更新时间,/' ipv4.txt
-          sed -i 's/^更新时间,/晓宇更新时间,/' ipv4.1.txt
+          
           
           # 清空README.md
           echo "" > README.md
@@ -67,3 +67,4 @@ jobs:
         env:
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
