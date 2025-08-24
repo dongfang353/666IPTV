@@ -30,7 +30,7 @@ jobs:
           if [ -f "ipv4.txt" ]; then
             echo "处理 ipv4.txt..."
             git checkout --ours ipv4.txt
-            sed -i '2s/^更新时间,/素弦更新时间,/' ipv4.txt || echo "警告: sed 命令未能更新 ipv4.txt 的第二行"
+            sed -i '2s/^更新时间,/晓宇更新时间,/' ipv4.txt || echo "警告: sed 命令未能更新 ipv4.txt 的第二行"
             cat ipv4.txt | head -5  # 显示前5行以验证更改
 
             # 检查是否存在 custom_channels.txt 文件
@@ -51,7 +51,7 @@ jobs:
           if [ -f "ipv4.1.txt" ]; then
             echo "处理 ipv4.1.txt..."
             git checkout --ours ipv4.1.txt
-            sed -i '2s/^更新时间,/素弦更新时间,/' ipv4.1.txt || echo "警告: sed 命令未能更新 ipv4.1.txt 的第二行"
+            sed -i '2s/^更新时间,/晓宇更新时间,/' ipv4.1.txt || echo "警告: sed 命令未能更新 ipv4.1.txt 的第二行"
           else
             echo "警告: 未找到 ipv4.1.txt 文件"
           fi
